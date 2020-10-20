@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/darkGreen">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/showDialog"
+            android:onClick="showDialog"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Show Popup"
+            android:background="@drawable/buttonstyle"
+            android:foreground="?attr/selectableItemBackground"
+            android:padding="7dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/view_profile"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="navigateToProfileActivity"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="View Profile"
+            android:background="@drawable/buttonstyle"
+            android:foreground="?attr/selectableItemBackground"
+            android:padding="7dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="searchPage"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Search Firebase"
+            android:background="@drawable/buttonstyle"
+            android:padding="7dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

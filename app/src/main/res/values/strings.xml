@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Custom Popup App</string>
+    <string name="user_name">User name goes here</string>
+    <string name="user_status">User status message goes here. Could be relatively long so..</string>
+</resources>
